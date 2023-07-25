@@ -1,6 +1,12 @@
 # opengan
 opengan python API服务
 
+
+https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python
+
+
+
+
 Deploy with Vercel
 Flask + Vercel
 This example shows how to use Flask 2 on Vercel with Serverless Functions using the Python Runtime.
