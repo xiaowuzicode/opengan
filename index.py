@@ -19,7 +19,7 @@ def chat():
     )
     return response.choices[0].text.strip()
 
-@app.route('/hello/<name>')
+@app.route('/')
 def home(name):
-    return 'Hello %s' % name
+    return 'Hello '
     
