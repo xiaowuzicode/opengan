@@ -1,8 +1,11 @@
 # opengan
 opengan python API服务
 
-
+地址
 https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python
+
+官方的列子地址
+https://github.com/vercel/examples/blob/main/python/flask/api/index.py
 
 
 
