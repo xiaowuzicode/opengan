@@ -1,7 +1,6 @@
 from flask import Flask
 import request
 import openai
-import os
 
     
 @app.route('/')
