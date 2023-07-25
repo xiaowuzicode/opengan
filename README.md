@@ -7,6 +7,9 @@ https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python
 官方的列子地址
 https://github.com/vercel/examples/blob/main/python/flask/api/index.py
 
+创建自己的
+https://www.shili8.cn/article/detail_20001099259.html
+
 
 
 
