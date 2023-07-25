@@ -1,4 +1,5 @@
-from flask import Flask,request
+from flask import Flask
+import request
 import openai
 import os
 
