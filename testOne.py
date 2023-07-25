@@ -18,3 +18,10 @@ def chat():
         temperature=0.7
     )
     return response.choices[0].text.strip()
+
+@app.route('/hello/<name>')
+def home(name):
+    return 'Hello %s' % name
+
+if __name__ == '__main__':
+   app.run(debug = True)
