@@ -12,7 +12,7 @@ def Response_headers(content):
     return resp
 
 
-@app.route('/chat',methods=["GET","POST"])
+@app.route('/chat',methods=["POST"])
 def chat():
     data = request.get_json()
     user_input = data['userInput']
@@ -29,7 +29,7 @@ def chat():
     resp = Response_headers(content)  
     return resp
 
-@app.route('/test',methods=["GET","POST"])
+@app.route('/test',methods=["POST"])
 def test():
     data = request.get_json()
     user_input = data['userInput']
