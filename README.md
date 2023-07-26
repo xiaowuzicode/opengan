@@ -12,7 +12,7 @@ https://github.com/vercel/examples/blob/main/python/flask/api/index.py
 创建自己的
 https://www.shili8.cn/article/detail_20001099259.html
 
-
+https://blog.csdn.net/weixin_42225889/article/details/131371440
 
 
 Deploy with Vercel
