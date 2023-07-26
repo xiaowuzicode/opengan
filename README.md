@@ -14,6 +14,8 @@ https://www.shili8.cn/article/detail_20001099259.html
 
 https://blog.csdn.net/weixin_42225889/article/details/131371440
 
+https://www.jb51.cc/flask/3789053.html
+http://www.phpxs.com/post/10335/
 
 Deploy with Vercel
 Flask + Vercel
