@@ -6,8 +6,13 @@ app = Flask(__name__)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+def Response_headers(content):  
+    resp = Response(content)  
+    resp.headers['Access-Control-Allow-Origin'] = '*'  
+    return resp
 
-@app.route('/chat',methods=["POST"])
+
+@app.route('/chat',methods=["GET","POST"])
 def chat():
     data = request.get_json()
     user_input = data['userInput']
@@ -20,7 +25,9 @@ def chat():
             presence_penalty=0.7,
             max_tokens=240
     )
-    return response.choices[0].text.strip()
+    content = response.choices[0].text.strip()
+    resp = Response_headers(content)  
+    return resp
 
 
 @app.route('/')
