@@ -32,8 +32,8 @@ def chat():
 @app.route('/test',methods=["POST"])
 def test():
     data = request.get_json()
-    user_input = data['userInput']
-    userPassword = data['userPassword']
+    user_input = data['in']
+    userPassword = data['user']
     return user_input
 
 @app.route('/')
