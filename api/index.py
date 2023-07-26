@@ -30,7 +30,7 @@ def chat():
     return resp
 
 @app.route('/test',methods=["GET","POST"])
-def chat():
+def test():
     data = request.get_json()
     user_input = data['userInput']
     userPassword = data['userPassword']
