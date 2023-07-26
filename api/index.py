@@ -1,4 +1,4 @@
-from flask import Flask,request
+from flask import Flask,request,jsonify
 import openai
 import os
 
@@ -9,6 +9,9 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 @app.route('/chat',methods=["POST"])
 def chat():
+    data = request.get_json()
+    user_input = data['userInput']
+    userPassword = data['userPassword']
     response = openai.Completion.create(
             model="text-davinci-003",
             prompt=user_input,
