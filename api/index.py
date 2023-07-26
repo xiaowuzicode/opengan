@@ -29,6 +29,12 @@ def chat():
     resp = Response_headers(content)  
     return resp
 
+@app.route('/test',methods=["GET","POST"])
+def chat():
+    data = request.get_json()
+    user_input = data['userInput']
+    userPassword = data['userPassword']
+    return user_input
 
 @app.route('/')
 def home():
