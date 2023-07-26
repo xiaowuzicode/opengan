@@ -32,9 +32,7 @@ def chat():
 @app.route('/test',methods=["POST"])
 def test():
     data = request.get_json(force=True)
-    user_input = data['in']
-    userPassword = data['user']
-    return user_input +"123---"
+    return data +"123---"
 
 @app.route('/')
 def home():
