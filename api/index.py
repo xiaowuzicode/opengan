@@ -70,7 +70,7 @@ def test():
 
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return 'Hello, opengan!'
     
 @app.route('/about')
 def about():
